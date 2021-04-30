@@ -10,6 +10,35 @@
 </head>
 <body>
     <h1>JOGO DA COBRINHA &#128013;</h1>
+    <div>
+        <select name="corBG" id="corBG">
+            <option value="lightblue">azul</option>
+            <option value="lightgreen">verde</option>
+            <option value="lightcoral">vermelho</option>
+            <option value="khaki">amarelo</option>
+            <option value="pink">rosa</option>
+            <option value="grey">cinza</option>
+        </select>
+        <select name="corCobrinha" id="corCobrinha">
+            <option value="blue">azul</option>
+            <option value="green">verde</option>
+            <option value="red">vermelho</option>
+            <option value="yellow">amarelo</option>
+            <option value="deeppink">rosa</option>
+            <option value="black">preto</option>
+        </select>
+        <select name="corComida" id="corComida">
+            <option value="blue">azul</option>
+            <option value="green">verde</option>
+            <option selected value="red">vermelho</option>
+            <option value="yellow">amarelo</option>
+            <option value="deeppink">rosa</option>
+            <option value="black">preto</option>
+        </select>
+        <button onclick="start();">Start</button>
+        <button id="restart" disabled onclick="restart();">Restart</button>
+    </div>
+    <br>
     <canvas id="cobra" width="512" height="512"></canvas>
 </body>
 </html>
